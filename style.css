@@ -5,8 +5,15 @@
   }
 
 body {
-    background-image: url(./rennan\ francisco\ de\ oliveira.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-color: black;
+  background: url(./rennan\ francisco\ de\ oliveira.png) no-repeat center/contain;
+  width: 100vh;
+  height: 100vh;
+  background-color: black;
 }
+
+  
+  footer{
+    padding: 24px 0;
+    text-align: center;
+    font-size: 14px;
+  }
