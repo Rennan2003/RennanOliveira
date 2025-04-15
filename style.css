@@ -1,4 +1,4 @@
-/* Reset básico */
+
 * {
   margin: 0;
   padding: 0;
@@ -13,18 +13,17 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
- background-image: url('./Imagens/rennan\ francisco\ de\ oliveira\ \(2\).png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
 }
 
 .container {
   position:center;
   width: 90%;
   max-width: 1200px;
-
+  background-image: url(./Imagens/c5479a4a53489876144df0155dc399cc.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 h1 {
@@ -34,10 +33,10 @@ h1 {
 }
 
 .image-grid {
-  position: relative; /* Define o contexto de posicionamento absoluto para os links */
+  position: relative;
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas */
-  gap: 1rem; /* Espaço entre as imagens */
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 1rem; 
 }
 
 img {
@@ -46,42 +45,36 @@ img {
 }
 
 .text-link {
-  position: absolute; /* Posicionamento absoluto em relação ao .image-grid */
+  position: absolute; 
   font-size: 1.5rem;
   color: orange;
   text-decoration: none;
   font-weight: bold;
-  z-index: 10; /* Garante que fique acima das imagens */
+  z-index: 10;
 }
 
-/* Posicionamento específico de cada link */
 
-/* TEXTOS */
+
 .text-link:nth-of-type(1) {
-  top: 20%; /* Ajuste vertical */
-  left: 30%; /* Ajuste horizontal */
+  top: 20%;
+  left: 30%; 
 }
 
-/* FILMES */
+
 .text-link:nth-of-type(2) {
-  top: 40%; /* Ajuste vertical */
-  left: 60%; /* Ajuste horizontal */
+  top: 40%;
+  left: 60%; 
 }
 
-/* INSTAGRAM */
+
 .text-link:nth-of-type(3) {
-  top: 60%; /* Ajuste vertical */
-  left: 30%; /* Ajuste horizontal */
+  top: 60%; 
+  left: 30%;
 }
 
-/* GITHUB */
+
 .text-link:nth-of-type(4) {
-  top: 80%; /* Ajuste vertical */
-  left: 60%; /* Ajuste horizontal */
+  top: 80%; 
+  left: 60%; 
 }
 
-/* eu */
-.text-link:nth-of-type(5) {
-  top: 50%; /* Ajuste vertical */
-  right: 10%; /* Ajuste horizontal */
-}
