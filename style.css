@@ -1,19 +1,87 @@
+/* Reset básico */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-body {
-  background: url(./rennan\ francisco\ de\ oliveira.png) no-repeat center/contain;
-  width: 100vh;
-  height: 100vh;
-  background-color: black;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-  
-  footer{
-    padding: 24px 0;
-    text-align: center;
-    font-size: 14px;
-  }
+body {
+
+  color: rgb(0, 0, 0);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+ background-image: url('./Imagens/rennan\ francisco\ de\ oliveira\ \(2\).png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  position:center;
+  width: 90%;
+  max-width: 1200px;
+
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.image-grid {
+  position: relative; /* Define o contexto de posicionamento absoluto para os links */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Divide em 3 colunas */
+  gap: 1rem; /* Espaço entre as imagens */
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.text-link {
+  position: absolute; /* Posicionamento absoluto em relação ao .image-grid */
+  font-size: 1.5rem;
+  color: orange;
+  text-decoration: none;
+  font-weight: bold;
+  z-index: 10; /* Garante que fique acima das imagens */
+}
+
+/* Posicionamento específico de cada link */
+
+/* TEXTOS */
+.text-link:nth-of-type(1) {
+  top: 20%; /* Ajuste vertical */
+  left: 30%; /* Ajuste horizontal */
+}
+
+/* FILMES */
+.text-link:nth-of-type(2) {
+  top: 40%; /* Ajuste vertical */
+  left: 60%; /* Ajuste horizontal */
+}
+
+/* INSTAGRAM */
+.text-link:nth-of-type(3) {
+  top: 60%; /* Ajuste vertical */
+  left: 30%; /* Ajuste horizontal */
+}
+
+/* GITHUB */
+.text-link:nth-of-type(4) {
+  top: 80%; /* Ajuste vertical */
+  left: 60%; /* Ajuste horizontal */
+}
+
+/* eu */
+.text-link:nth-of-type(5) {
+  top: 50%; /* Ajuste vertical */
+  right: 10%; /* Ajuste horizontal */
+}
